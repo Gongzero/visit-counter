@@ -1,4 +1,7 @@
-export default async function handler(req, res) {
+export default function handler(req, res) {
+  res.status(200).json({ message: "Hello from API!" });
+}
+
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
 
